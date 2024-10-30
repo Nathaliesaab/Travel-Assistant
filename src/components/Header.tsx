@@ -1,5 +1,6 @@
 import { FC } from "react";
 import LandingIllustration from '../assets/Landing.png'
+import { Search } from "./Search";
 
 export const Header: FC = () => {
     return (
@@ -11,6 +12,7 @@ export const Header: FC = () => {
                             <h1 className="mb-4 text-6xl font-medium text-center text-primary">Most awarded online travel assistant</h1>
                             <h2 className="text-3xl font-medium text-center">Travel Smart</h2>
                         </div>
+                        <Search />
                         <figure>
                             <img src={LandingIllustration} />
                         </figure>

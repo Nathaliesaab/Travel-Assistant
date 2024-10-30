@@ -1,22 +1,23 @@
 import { FC } from "react";
-import LandingIllustration from '../assets/Landing.png'
+import London from '../assets/london.jpg'
 
-export const AboutUs: FC = () => {
+export const VisitLondon: FC = () => {
     return (
         <section>
             <div className="w-full px-2 py-6">
-
                 <div className="flex flex-col items-center w-full px-2 pt-16 m-auto max-w-7xl">
-                    <h1 className="py-2 text-5xl">About Us</h1>
-                    <div className="flex flex-col items-center justify-between w-full md:flex-row spaxe-x-2">
-                        <div className="self-center">
+                    <h2 className="mb-12 text-3xl font-bold text-center">Visit London</h2>
+                    <div className="flex flex-col items-center justify-between w-full pt-8 space-y-4 md:flex-row spaxe-x-2 sm:space-y-0">
+                        <div className="self-center sm:max-w-[45%]">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
                             culpa alias quibusdam autem animi dolores, veritatis, eligendi repellat id p
                             erspiciatis deleniti. Molestias nisi pariatur obcaecati eos corporis, eaque ut saepe.
                         </div>
-                        <figure>
-                            <img src={LandingIllustration} />
-                        </figure>
+                        <div className="sm:max-w-[50%] w-full">
+                            <figure className="overflow-hidden rounded-xl">
+                                <img src={London} />
+                            </figure>
+                        </div>
                     </div>
                 </div>
             </div>
