@@ -14,7 +14,7 @@ export const Header: FC = () => {
                         </div>
                         <Search />
                         <figure>
-                            <img src={LandingIllustration} />
+                            <img src={LandingIllustration} className="w-[80%] mx-auto" />
                         </figure>
                     </div>
                 </div>
