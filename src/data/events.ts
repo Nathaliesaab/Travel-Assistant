@@ -7,7 +7,8 @@ export const oList_events: Event[] = [
         "name": "Coldplay Reunion",
         "location": "London, England",
         "description": "Mellow Rock",
-        "type": "concert"
+        "type": "concert",
+        "priority": "High"
     },
     {
         "id": 3,
@@ -15,6 +16,7 @@ export const oList_events: Event[] = [
         "name": "Cathy Davis Book Reading",
         "location": "Downtown Abbey, London",
         "description": "Listen to the world renowned author talk about her latest best-seller",
-        "type": "Book Reading"
+        "type": "Book Reading",
+        "priority": "Medium"
     }
 ]

@@ -25,10 +25,10 @@ const reviews = [
 export const Reviews = () => {
     return (
         <div className="px-6 py-16 bg-gray-50">
-            <h2 className="text-3xl font-bold text-center">What Our Customers Say</h2>
+            <h2 className="text-3xl font-bold text-center">What Our Users Say</h2>
             <div className="grid max-w-5xl grid-cols-1 gap-8 pt-8 mx-auto md:grid-cols-2 lg:grid-cols-3">
                 {reviews.map((review) => (
-                    <div key={review.id} className="flex flex-col items-center p-6 text-center transition-shadow duration-300 bg-white rounded-lg shadow-lg hover:shadow-xl">
+                    <div key={review.id} className="flex flex-col items-center p-6 text-center transition-shadow duration-300 bg-white rounded-lg shadow-lg hover:shadow-xl hover:cursor-pointer">
                         <img
                             src={review.avatar}
                             alt={`${review.name} avatar`}

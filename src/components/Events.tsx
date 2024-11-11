@@ -11,7 +11,7 @@ const EventList: FC = () => {
                 {oList_events.map((event: Event) => (
                     <div
                         key={event.id}
-                        className="overflow-hidden transition-shadow duration-300 bg-white border border-gray-200 shadow-lg rounded-xl hover:shadow-2xl"
+                        className="overflow-hidden transition-shadow duration-300 bg-white border border-gray-200 shadow-lg rounded-xl hover:shadow-2xl hover:cursor-pointer"
                     >
                         <div className="p-6">
                             <h3 className="mb-2 text-2xl font-semibold text-gray-800">{event.name}</h3>
