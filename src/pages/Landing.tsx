@@ -11,7 +11,6 @@ const Landing = () => {
             <Navbar />
             <Header />
             <VisitLondon />
-            <EventList />
             <Reviews />
             <Footer />
         </>
