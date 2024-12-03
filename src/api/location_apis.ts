@@ -23,11 +23,23 @@ export const Filter_Search = async (searchFilters: Record<string, any>) => {
             },
             body: JSON.stringify(searchFilters),
         });
-        return [await response.json(), null];
+
+        if (response.status === 404) {
+            return [[], null];
+        }
+
+        const data = await response.json();
+
+        if (!data || data.length === 0) {
+            return [[], null];
+        }
+
+        return [data, null];
     } catch (error) {
-        return [null, error];
+        return [[], error];
     }
 };
+
 
 export const Update_Location_Priority = async (oUpdatePriorityParams: UpdatePriorityParams) => {
     try {

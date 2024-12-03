@@ -13,7 +13,7 @@ export const Header: FC = () => {
                             <h2 className="text-3xl font-medium text-center">Travel Smart</h2>
                         </div>
                         <Search />
-                        <figure>
+                        <figure className="z-[-1]">
                             <img src={LandingIllustration} className="w-[80%] mx-auto" />
                         </figure>
                     </div>
