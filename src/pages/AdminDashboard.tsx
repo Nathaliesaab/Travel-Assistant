@@ -26,7 +26,15 @@ const AdminDashboard = ({ setLoggedIn }: { setLoggedIn: (loggedIn: boolean) => v
         setIsLoading(true);
         const [data, error] = await Get_All_Locations();
         if (data) {
-            setLocations(data);
+            setLocations(
+                data
+                    ?.filter((location) => location.name?.length! > 0)
+                    .sort((a, b) => {
+                        if (a.name?.toLowerCase().includes("farringdon")) return -1;
+                        if (b.name?.toLowerCase().includes("farringdon")) return 1;
+                        return 0;
+                    })
+            );
         } else {
             console.error("Error fetching locations:", error);
         }
